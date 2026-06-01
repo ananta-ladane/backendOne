@@ -1,0 +1,87 @@
+<%- include("Header/header") %>
+    <div class="main-lbm">
+
+        <nav class="sd-nav ">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center ">
+                    <div class="di1-dnav">
+                        <p><button><i class="bi bi-film"></i></button><span>BookMy<i>Show</i></span></p>
+                    </div>
+
+                    <form class=" smn" method="post" action="/sdata">
+                        <input type="text" placeholder="search movie name" name="movie" />
+                        <button type="submit">search</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </nav>
+        <div class="lbm-body">
+            <div class="container">
+                <!-- <form method="post" actions="">
+            <input type="text" placeholder="Enter your city" name="city" class="form-control my-2" />
+            <input type="text" placeholder="Enter your state" name="state" class="form-control my-2" />
+            <input type="text" placeholder="Enter your country" name="country" class="form-control my-2" />
+            <button type="submit" class="btn btn-primary">set location</button>
+        </form> -->
+                <h1 class="text-light">loation base list</h1>
+                <div class="row">
+                    <% locationtheaterdata.map((tdata)=> { %>
+
+                        <div class="col-6 col-lg-4 ">
+                            <div class="border border-info rounded-3 my-2 p-2">
+                                <div class="card my-2">
+                                    <div class="card-body">
+
+
+                                        <strong>Theater name: <%= tdata.theaterDetails.theatername %></strong>
+                                        <p>
+                                            <%= tdata.theaterDetails.city %>,
+                                                <%= tdata.theaterDetails.state %>,
+                                                    <%= tdata.theaterDetails.country%>
+                                        </p>
+
+
+                                        <img class="w-100" src="<%= tdata.Image%>">
+                                        <h4 class="card-text">
+                                            movie name : <%= tdata.Moviename %>
+                                        </h4>
+                                        <p class="card-text">
+                                            <%= tdata.Discription %>
+                                        </p>
+                                        <p class="card-text">Rating: <%= tdata.Reting %>
+                                        </p>
+                                        <p class="card-text">Date: <%= tdata.Date %>
+                                        </p>
+                                        <p class="card-text">Time: <%= tdata.Time %>
+                                        </p>
+                                        <p class="card-text">Duration: <%= tdata.Duration %>
+                                        </p>
+
+                                        <div class=" d-flex mt-2">
+
+                                            <!-- <button class="btn btn-primary">Book now</button> -->
+
+                                            <form method="post" action="/sitdata">
+                                                <input type="hidden" name="id" value="<%= tdata._id%>">
+                                                <button type="submit" class="btn btn-primary">Book now</button>
+                                            </form>
+                                            <button class="ms-2 btn btn-secondary">see more</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <% }); %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("Footer/footer") %>

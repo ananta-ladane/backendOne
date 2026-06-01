@@ -1,0 +1,26 @@
+<%- include("Header/header") %>
+
+    <div class="container mt-3">
+
+        <p>if already you hava an account plz <a href="/theaterlogin">login here</a></p>
+        <form method="post" action="/getsingupdata" class="container mt-5">
+            <input type="text" placeholder="Enter theater username" name="username" class="form-control my-2" />
+            <input type="email" placeholder="Enter theater email" name="email" class="form-control my-2" />
+            <input type="number" placeholder="Enter available seats" name="seats" class="form-control my-2" />
+            <input type="text" placeholder="Enter nearby location or landmark" name="landmark"
+                class="form-control my-2" />
+            <input type="text" placeholder="Enter theater city" name="city" class="form-control my-2">
+            <input type="text" placeholder="Enter theater state" name="state" class="form-control my-2">
+            <input type="text" placeholder="Enter theater country" name="country" class="form-control my-2">
+            <input type="password" placeholder="Enter your password" name="password" class="form-control my-2" />
+            <button type="submit" class="btn btn-primary">sign up</button>
+        </form>
+
+        <% if(message){ %>
+            <span class="text-danger">
+                <%= message %>
+            </span>
+            <% } %>
+
+    </div>
+    <%- include("Footer/footer") %>

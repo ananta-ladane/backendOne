@@ -1,0 +1,15 @@
+<%- include("Header/header")%>
+    <h1>theater edit data form</h1>
+   <form method="post" action="/updatetheaterdata/<%= data._id %>" class="container mt-5">
+            <input type="text" placeholder="Enter theater username" name="theatername" value="<%= data.theatername%>" class="form-control my-2" />
+            <input type="email" placeholder="Enter theater email" name="email" value="<%= data.email%>" class="form-control my-2" />
+            <input type="number" placeholder="Enter available seats" name="seats" value="<%= data.seats%>" class="form-control my-2" />
+            <input type="text" placeholder="Enter nearby location or landmark" name="landmark" value="<%= data.landmark%>" class="form-control my-2" />
+            <input type="text" placeholder="Enter theater city" name="city" value="<%= data.city%>" class="form-control my-2" />
+            <input type="text" placeholder="Enter theater state" name="state" value="<%= data.state%>" class="form-control my-2" />
+            <input type="text" placeholder="Enter theater country" name="country" value="<%= data.country%>" class="form-control my-2" />
+            <button type="submit" class="btn btn-primary">Update Data</button>
+           
+        </form>
+
+    <%- include("Footer/footer")%>

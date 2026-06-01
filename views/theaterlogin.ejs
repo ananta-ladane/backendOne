@@ -1,0 +1,13 @@
+<%- include("Header/header") %>
+    <form method="post" action="/theaterlogindata" class="container mt-5">
+        <input type="email" name="email" placeholder="Email" class="form-control my-2" />
+        <input type="password" name="password" placeholder="Password" class="form-control my-2" />
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+
+    <% if(message){ %>
+        <span class="text-danger">
+            <%= message %>
+        </span>
+        <% } %>
+            <%- include("Footer/footer") %>

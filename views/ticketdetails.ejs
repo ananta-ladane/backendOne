@@ -1,0 +1,90 @@
+<%- include("Header/header") %>
+    <div class="main-tbd">
+        <nav class="sd-nav ">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center ">
+                    <div class="di1-dnav">
+                        <p><button><i class="bi bi-film"></i></button><span>BookMy<i>Show</i></span></p>
+                    </div>
+
+                    <form class=" smn d-none" method="post" action="/sdata">
+                        <input type="text" placeholder="search movie name" name="movie" />
+                        <button type="submit">search</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+        <div class="tbd-bd">
+            <div class="container">
+                <h1 class="text-white text-center">Payment done -Ticket Details</h1>
+
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 my-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-text">
+                                    booking_id: <%= ticketdata._id%>
+                                </h4>
+                                <p class="card-text">
+                                    Movie-Name: <%= ticketdata.moviename %>
+                                </p>
+                                <p class="card-text">
+                                    seatno: <span id="seatnu">
+                                        <%= ticketdata.seats %>
+                                    </span>
+                                </p>
+                                <p class="card-text">
+                                    showdate: <%= ticketdata.sbook%>
+                                </p>
+                                <p class="card-text">
+                                    StartTime: <%= ticketdata.time %>
+                                </p>
+                                <p class="card-text">
+                                    Duration: <%= ticketdata.duration %>
+                                </p>
+                                <p class="card-text">
+                                    paid: <%= ticketdata.totalprice %>
+                                </p>
+                                <p class="card-text">
+                                    Theater Name: <%= ticketdata.theatername %>
+                                </p>
+                                <p class="card-text">
+                                    Location: <%= ticketdata.location %>
+
+                                </p>
+                                <p>status: <span id="status1">
+                                        <%= ticketdata.status %>
+                                    </span>
+                                </p>
+
+
+
+                                <h4 class="card-title">Payment Successful</h4>
+                                <form method="post" action="/foundticket/<%= ticketdata._id %>">
+
+                                    <button class="btn btn-primary" type="submit">Done</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function chnageColor() {
+            const seatnu = document.getElementById("seatnu").innerText;
+            console.log(seatnu)
+
+            console.log("this is the ticket details page seat number")
+
+            const status = document.getElementById("status1").innerText;
+            console.log(status);
+        }
+
+        chnageColor();
+    </script>
+
+    <%- include("Footer/footer")%>

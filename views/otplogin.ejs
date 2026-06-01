@@ -1,0 +1,17 @@
+<%- include("Header/header")%>
+
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center  mt-5 ">
+            <div class="w-50 border  border-info rounded-2 p-3">
+                <h1> login here</h1>
+                <form class="container" method="post" action="">
+                    <input type="email" placeholder="Enter your Firstname & Lastname" name="name" value="<%= data.Name %>" class="form-control my-2" disabled />
+                    <input type="email" placeholder="Enter your email" name="email" value="<%= data.Email %>" class="form-control my-2" disabled />
+                    <input type="password" placeholder="Enter your OTP" name="pass"  class="form-control my-2" />
+                    <button class="btn btn-primary" type="submit">login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <%- include("Footer/footer")%>
