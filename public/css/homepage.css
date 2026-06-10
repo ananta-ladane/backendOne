@@ -1,0 +1,928 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.hea {
+    background-image: linear-gradient(25deg, rgb(6, 1, 20), rgb(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=2000");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* padding-top: 0;
+    margin-top: 0; */
+
+}
+
+
+
+.main-nav {
+    /* border: 1px solid #e5e7eb; */
+    padding-top: 20px;
+    background-color: rgb(3, 0, 20, 0.5);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+.di1-nav p button {
+    background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-right: 3px;
+    color: white;
+    font-weight: 700;
+}
+
+.di1-nav p span {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.di2-nav {
+    padding-top: 5px;
+}
+
+.di2-nav .btn1 {
+    background-color: rgb(53, 51, 51);
+    color: azure;
+    font-weight: 600;
+    padding: 4px 8px 5px 8px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.di2-nav .btn1:hover {
+    background: linear-gradient(to bottom left, rgb(198, 36, 36), rgb(147, 51, 234));
+    box-shadow: 0 0 3px white;
+}
+
+.di2-nav .btn2 {
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 4px 7px 5px 7px;
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(to bottom left, rgb(198, 36, 36), rgb(147, 51, 234));
+}
+
+.di2-nav .btn2:hover {
+    background: linear-gradient(to right, rgb(48, 46, 46), rgb(48, 47, 49));
+    box-shadow: 0 0 3px white;
+}
+
+.dm {
+    background-color: rgba(240, 248, 255, 0.1);
+   backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+
+.dm li a {
+    color: white;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+.di1-hero {
+    padding-top: 230px;
+    padding-left: 10px;
+}
+
+.tre p {
+
+    padding: 2px 10px;
+    color: white;
+    background-color: #dc2626;
+    font-size: 13px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tre span {
+    color: gold;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.di1-hero h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+
+.di1-hero h1 span {
+    background: linear-gradient(to right, rgb(79, 43, 102), rgb(153, 38, 38));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fol {
+    color: rgb(156 163 175);
+    font-family: 'Poppins', sans-serif;
+}
+
+.di2-hero .btn3 {
+    border-radius: 10px;
+    padding: 8px 15px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.di2-hero .btn3 i {
+    margin-right: 5px;
+    color: #030014;
+    font-weight: 700;
+}
+
+.di2-hero .btn3 a {
+
+    color: #030014;
+    text-decoration: none;
+}
+
+.di2-hero .btn3:hover {
+    scale: calc(0.8);
+}
+
+.di2-hero .btn4 {
+    border-radius: 10px;
+    padding: 8px 15px;
+    margin-top: 10px;
+    background-color: rgb(11, 7, 7);
+    color: white;
+    font-weight: 700;
+    border: 1px solid rgb(131, 127, 127);
+    font-family: 'Poppins', sans-serif;
+}
+
+.di2-hero .btn4 i {
+    margin-right: 5px;
+}
+
+.di2-hero .btn4:hover {
+    background-color: rgb(38, 38, 38);
+}
+
+
+#sect1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+
+    /* background: linear-gradient(to  right, rgb(22, 13, 38), rgb(34, 14, 14)); */
+    background: linear-gradient(to bottom, rgb(22, 13, 38)),
+        linear-gradient(to top right, rgb(55, 11, 11));
+
+}
+
+.di1-sect1 {
+    margin-top: 30px;
+}
+
+.di1-sect1 h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.di1-sect1 p {
+    color: gray;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub1-sect1 .fig1 {
+    width: 90%;
+    height: 530px;
+    margin: 30px auto;
+    border: none;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 0 2px white;
+    background: linear-gradient(to left, rgb(52, 21, 21, 0.5), rgb(45, 27, 78, 0.5));
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.sub1-sect1 .fig1:hover {
+    transform: translateY(-13px);
+}
+
+
+
+
+.sub1-sect1 .fig1 img {
+    width: 100%;
+    height: 400px;
+    background-image: url("https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?auto=format&fit=crop&q=80&w=600");
+    background-position: center;
+    border: none;
+    border-radius: 10px;
+
+
+}
+
+.sub1-sect1 .fig1 img:hover {
+    scale: calc(1.1);
+}
+
+.sub1-sect1 .fig1 figcaption {
+    padding: 20px 10px 20px 20px;
+}
+
+.fig1 figcaption .sci {
+    text-transform: uppercase;
+    color: azure;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fig1 figcaption h3 {
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fig1 figcaption .Ex {
+    color: rgb(192, 187, 187);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub1-sect1 .fig2 {
+    width: 90%;
+    height: 530px;
+    margin: 30px auto;
+    background: linear-gradient(to left, rgb(52, 21, 21, 0.5), rgb(45, 27, 78, 0.5));
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 0 2px white;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.sub1-sect1 .fig2:hover {
+    transform: translateY(-13px);
+}
+
+
+.sub1-sect1 .fig2 img {
+    width: 100%;
+    height: 400px;
+    background-image: url("https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&q=80&w=600");
+    background-position: center;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.sub1-sect1 .fig2 img:hover {
+    scale: calc(1.1);
+}
+
+.sub1-sect1 .fig2 figcaption {
+    padding: 20px 10px 20px 20px;
+}
+
+.fig2 figcaption .sci {
+    text-transform: uppercase;
+    color: azure;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fig2 figcaption h3 {
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fig2 figcaption .Ex {
+    color: rgb(192, 187, 187);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.sub1-sect1 .fig3 {
+    width: 90%;
+    height: 530px;
+    margin: 30px auto;
+    background: linear-gradient(to left, rgb(52, 21, 21, 0.5), rgb(45, 27, 78, 0.5));
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 0 2px white;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.sub1-sect1 .fig3:hover {
+    transform: translateY(-13px);
+}
+
+
+.sub1-sect1 .fig3 img {
+    width: 100%;
+    height: 400px;
+    background-image: url("https://images.unsplash.com/photo-1594908900066-3f47337549d8?auto=format&fit=crop&q=80&w=600");
+    background-position: center;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.sub1-sect1 .fig3 img:hover {
+    scale: calc(1.2);
+}
+
+.sub1-sect1 .fig3 figcaption {
+    padding: 20px 10px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fig3 figcaption .sci {
+    text-transform: uppercase;
+    color: azure;
+    font-size: 15px;
+}
+
+.fig3 figcaption h3 {
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.fig3 figcaption .Ex {
+    color: rgb(192, 187, 187);
+    font-size: 15px;
+}
+
+.sub1-sect1 .fig4 {
+    width: 90%;
+    height: 530px;
+    margin: 30px auto;
+    background: linear-gradient(to left, rgb(52, 21, 21, 0.5), rgb(45, 27, 78, 0.5));
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 0 2px white;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+
+.sub1-sect1 .fig4:hover {
+    transform: translateY(-12px);
+}
+
+.sub1-sect1 .fig4 img {
+    width: 100%;
+    height: 400px;
+    background-image: url("https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=600");
+    background-position: center;
+    border: none;
+    border-radius: 10px;
+
+
+}
+
+.sub1-sect1 .fig4 img:hover {
+    scale: calc(1.1);
+}
+
+.sub1-sect1 .fig4 figcaption {
+    padding: 20px 10px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fig4 figcaption .sci {
+    text-transform: uppercase;
+    color: azure;
+    font-size: 15px;
+}
+
+.fig4 figcaption h3 {
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.fig4 figcaption .Ex {
+    color: rgb(192, 187, 187);
+    font-size: 15px;
+}
+
+.di2-sect1 {
+
+    width: 90%;
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(29, 21, 46);
+
+}
+
+.di2-sect1 h1 {
+    font-size: 45px;
+    color: white;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+
+.di2-sect1 p {
+    color: rgb(154, 149, 149);
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.di2-sect1 .btn5 {
+    padding: 8px 10px;
+    background: linear-gradient(to left, rgb(198, 36, 36), rgb(147, 51, 234));
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0 0 2px white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.di2-sect1 .btn5:hover {
+    scale: calc(0.8);
+}
+
+footer {
+    background-color: rgb(1, 0, 8, 1);
+    border: none;
+}
+
+.main-foo {
+    width: 85%;
+    margin: 0px auto;
+    padding-top: 40px;
+}
+
+.sub1-foo {
+    padding-top: 20px;
+}
+
+.sub1-foo h4 i {
+    background: linear-gradient(to bottom left, rgb(188, 15, 15), rgb(161, 10, 161));
+    padding: 8px 10px;
+    border-radius: 10px;
+
+}
+
+.sub1-foo h4 {
+    color: white;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub1-foo p {
+    color: rgb(107 114 128);
+    padding-top: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub2-foo h4 {
+    color: white;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub2-foo ul {
+
+    padding-left: 0;
+}
+
+.sub2-foo ul li {
+    list-style: none;
+    line-height: 1.5;
+}
+
+.sub2-foo ul li a {
+    color: rgb(107 114 128);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.sub3-foo h4 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub3-foo ul {
+    padding-left: 0;
+}
+
+.sub3-foo ul li {
+    list-style: none;
+    line-height: 1.5;
+}
+
+.sub3-foo ul li a {
+    color: rgb(107 114 128);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub4-foo h4 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.sub4-foo p {
+    margin-right: 10px;
+
+}
+
+.sub4-foo p {
+    color: white;
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.sub4-foo p:hover {
+
+    box-shadow: 0 0 5px white;
+}
+
+
+.main2-foo {
+    border-top: 1px solid rgb(107 114 128);
+    text-align: center;
+    padding-top: 19px;
+    padding-bottom: 8px;
+
+}
+
+.main2-foo .res {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(107 114 128);
+
+}
+
+@media (min-width:576px) {
+
+
+    .hea {
+        height: 100vh;
+    }
+
+    .btn1 {
+        padding-top: 2px;
+    }
+
+    .di1-hero {
+        padding-top: 300px;
+    }
+
+    .di2-hero .btn3 {
+        margin-right: 10px;
+    }
+
+    .di2-sect1 {
+        padding: 30px;
+        margin-top: 40px;
+        /* background: linear-gradient(to left, rgb(34, 10, 10), rgb(50, 34, 56)); */
+        background: linear-gradient(to bottom, rgb(31, 17, 54)),
+            linear-gradient(to top right, rgb(153, 148, 148));
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 0 5px;
+
+        border-radius: 20px;
+    }
+
+    .sub1-foo {
+        margin-bottom: 30px;
+    }
+
+    .sub2-foo {
+        margin-bottom: 30px;
+    }
+
+    .sub2-foo ul li {
+        line-height: 1.7;
+    }
+
+    .sub3-foo ul li {
+        line-height: 1.7;
+    }
+
+    .sub4-foo {
+        margin-bottom: 30px;
+    }
+
+    .sub4-foo p {
+        margin-top: 15px;
+        line-height: 1.7;
+        margin-right: 20px;
+    }
+
+}
+
+@media (min-width:769px) {
+
+    .hea {
+        height: 100vh;
+    }
+
+    .di2-nav .btn1 {
+        padding: 5px 15px 10px 15px;
+    }
+
+    .di2-nav .btn2 {
+        padding: 5px 15px 10px 15px;
+    }
+
+    .di1-nav ul li {
+        list-style: none;
+        margin-top: 7px;
+        margin-right: 13px;
+
+    }
+
+    .di1-nav ul li a {
+        color: rgb(107 114 128);
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .di1-nav ul li a:hover {
+        color: aliceblue;
+    }
+
+    .di1-hero {
+        padding-top: 150px;
+    }
+
+    .tre p {
+        padding: 2px 15px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .di1-hero h1 {
+        font-size: 72px;
+        line-height: 1;
+        width: 50%;
+    }
+
+    #sect1 {
+        padding-bottom: 100px;
+    }
+
+    .sub1-sect1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sub1-sect1 .fig1 {
+        width: 46%;
+    }
+
+    .sub1-sect1 .fig2 {
+        width: 46%;
+    }
+
+    .sub1-sect1 .fig3 {
+        width: 46%;
+    }
+
+    .sub1-sect1 .fig4 {
+        width: 46%;
+    }
+
+    .di2-sect1 {
+        padding: 40px;
+        width: 100%;
+    }
+
+    .di2-sect1 .btn5 {
+        padding: 10px 15px;
+        box-shadow: 0 0 5px white;
+    }
+
+    .main-foo {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .main-foo .sub1-foo {
+        width: 38%;
+        margin-left: 10px;
+        padding-right: 30px;
+
+    }
+
+    .main-foo .sub2-foo {
+        width: 20%;
+        margin-top: 18PX;
+    }
+
+    .main-foo .sub3-foo {
+        width: 20%;
+        margin-top: 18PX;
+        margin-left: 10PX;
+    }
+
+    .main-foo .sub4-foo {
+        width: 8%;
+        margin-top: 18PX;
+    }
+
+
+}
+
+@media (min-width:995px) {
+
+
+    .main-nav {
+        height: 100px;
+        padding-top: 30px;
+    }
+
+    .di1-nav p span {
+        font-size: 25px;
+    }
+
+    .di1-nav ul li a {
+        font-size: 19px;
+    }
+
+    .di1-hero h1 {
+        line-height: 1.2;
+
+    }
+
+    .di1-hero .fol {
+        width: 70%;
+    }
+
+    .di2-nav .btn1 {
+        padding: 8px 15px;
+        font-size: 18px;
+    }
+
+    .di2-nav .btn2 {
+        padding: 8px 15px;
+        font-size: 18px;
+    }
+
+    .di2-sect1 .btn5 {
+        padding: 10px 19px;
+    }
+
+    footer {
+        height: 400px;
+        padding-top: 50px;
+    }
+
+    .main2-foo {
+        padding-top: 35px;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .main-nav .sem {
+        border: 1px solid white;
+        padding: 0 20px;
+        font-size: 20px;
+        height: 50px;
+        border-radius: 30px;
+        background: linear-gradient(to right, rgb(15, 12, 26), rgb(26, 18, 37));
+
+    }
+
+    .sub1-sect1 .fig1 {
+        height: 700px;
+    }
+
+    .sub1-sect1 .fig1 img {
+        height: 530px;
+    }
+
+    .sub1-sect1 .fig2 {
+        height: 700px;
+    }
+
+    .sub1-sect1 .fig2 img {
+        height: 530px;
+    }
+
+    .sub1-sect1 .fig3 {
+        height: 700px;
+    }
+
+    .sub1-sect1 .fig3 img {
+        height: 530px;
+    }
+
+    .sub1-sect1 .fig4 {
+        height: 700px;
+    }
+
+    .sub1-sect1 .fig4 img {
+        height: 530px;
+    }
+
+    footer {
+        height: 400px;
+    }
+
+    footer .main-foo {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .main-foo .sub2-foo {
+        margin-left: 70px;
+    }
+
+    .main2-foo {
+        padding-top: 35px;
+        height: 100px;
+    }
+
+}
+
+@media (min-width:1400px) {
+
+
+    .di1-hero {
+        padding-top: 280px;
+    }
+
+    .sub1-sect1 .fig1 {
+        height: 600px;
+        width: 23%;
+    }
+
+    .sub1-sect1 .fig1 img {
+        height: 450px;
+    }
+
+    .sub1-sect1 .fig2 {
+        height: 600px;
+        width: 23%;
+    }
+
+    .sub1-sect1 .fig2 img {
+        height: 450px;
+    }
+
+    .sub1-sect1 .fig3 {
+        height: 600px;
+        width: 23%;
+    }
+
+    .sub1-sect1 .fig3 img {
+        height: 450px;
+    }
+
+    .sub1-sect1 .fig4 {
+        height: 600px;
+        width: 23%;
+    }
+
+    .sub1-sect1 .fig4 img {
+        height: 450px;
+    }
+
+}

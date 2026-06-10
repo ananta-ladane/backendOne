@@ -1,0 +1,33 @@
+<%- include("Header/header")%>
+
+
+    <div class="container mt-2">
+        <div class="w-100">
+            <p class="text-start"><a class="btn btn-warning" href="/theaterlogout">Logout</a></p>
+            <p class="text-end"><a class="btn btn-secondary" href="/theaterdetail/<%= Tid %>">View profile</a>
+                <%= Tid%>
+            </p>
+            <p class="text-end"><a class="btn btn-info" href="/showmovies/<%=Tid %>"><i
+                        class="bi bi-arrow-right"></i></a></p>
+            <form class="container mt-2" action="/getmoviedata" method="POST">
+                <input type="hidden" name="tid" value="<%= Tid %>">
+                <input type="text" placeholder="Enter image path" name="image" class="form-control my-2">
+                <input type="text" placeholder="Enter movie name" name="moviename" class="form-control my-2">
+                <input type="text" placeholder="Enter movie Distription" name="moviedis" class="form-control my-2">
+                <input type="number" placeholder="Enter movie Rating" name="movierating" class="form-control my-2">
+                <input type="text" placeholder="Enter author name" name="auther" class="form-control my-2">
+                <input type="date" placeholder="Enter movie Data" name="date" class="form-control my-2">
+                <input type="time" placeholder="Enter show start time " name="time" class="form-control my-2">
+                <input type="time" placeholder="Enter show end time " name="endtime" class="form-control my-2">
+                <input type="number" placeholder="Enter the movie Duration" name="duration" class="form-control my-2">
+                <input type="number" placeholder="Enter the movie price" name="price" class="form-control my-2">
+                <input type="datetime-local" placeholder="Enter show date and time" name="datetime"
+                    class="form-control my-2">
+                <input type="number" placeholder="Enter the movie status" name="status" class="form-control my-2">
+
+                <button type="submit" class="btn btn-primary">Add Movie</button>
+            </form>
+        </div>
+    </div>
+
+    <%- include("Footer/footer")%>

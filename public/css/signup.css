@@ -1,0 +1,69 @@
+.us-div {
+    background-color: #1f1940;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+
+
+}
+
+.if {
+    color: white;
+}
+
+.us-sub {
+    padding-top: 100px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.us-sub1 {
+
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 3px white;
+}
+
+@media (min-width:576px) {
+    .us-div {
+        width: 100%
+    }
+
+    .us-sub {
+        width: 90%;
+    }
+}
+
+@media (min-width:768px) {
+
+    .us-sub{
+        width: 70%;
+       
+    }
+    
+}
+
+@media (min-width:1200px) {
+
+    .us-sub{
+        width: 60%;
+    }
+    
+}
+
+@media (min-width:1400px) {
+    
+    .us-sub1{
+        width: 80%;
+        margin: 0 auto;
+        height: 270px;
+        padding-top:40px
+    }
+}

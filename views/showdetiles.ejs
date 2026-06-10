@@ -1,0 +1,117 @@
+<%- include("Header/header") %>
+    <div class="main-sd">
+        <nav class="sd-nav ">
+            <div class="container">
+                <div class="d-flex justify-content-start align-items-center ">
+                    <div class="di1-dnav">
+                        <p><button><i class="bi bi-film"></i></button><span>BookMy<i>Show</i></span></p>
+                    </div>
+
+                    <form class="smn" method="post" action="/sdata">
+                        <input type="text" placeholder="search movie name" name="movie" />
+                        <button type="submit">search</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </nav>
+        <div class="main-bd">
+            <div class="container">
+
+                <div class="md">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btnl"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Location Search
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Location</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form method="post" action="/locationdata">
+                                        <input type="text" placeholder="Enter your city" name="city"
+                                            class="form-control mb-2" />
+                                        <input type="text" placeholder="Enter your state" name="state"
+                                            class="form-control my-2" />
+                                        <input type="text" placeholder="Enter your country" name="country"
+                                            class="form-control my-2" />
+                                        <button type="submit" class="btn btn-primary">set location</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h1 class="text-light">show list</h1>
+                <div class="row gx-2">
+
+                    <% moviedata.map((movie)=> { %>
+                        <div class=" col-md-4 mb-3   ">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <p> <img class="w-100" src="<%= movie.Image %>"></p>
+                                    <h4 class="card-text">
+                                        movie name : <%= movie.Moviename %>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= movie.Discription %>
+                                    </p>
+                                    <p class="card-text">Rating: <%= movie.Reting %>
+                                    </p>
+                                    <p class="card-text">Date: <%= movie.Date %>
+                                    </p>
+                                    <p class="card-text">Time: <%= movie.Time %>
+                                    </p>
+                                    <p class="card-text">Endtime: <%= movie.Endtime%>
+                                    </p>
+                                    <p class="card-text">Duration: <%= movie.Duration %>
+                                    </p>
+                                    <p class="card-text">Price: <%= movie.Price %>
+                                    </p>
+
+
+
+                                    <% movie.theaterInfo.map((theater)=> { %>
+                                        <strong>Theater name: <%= theater.theatername %></strong>
+                                        <p>
+                                            <%= theater.city %>,
+                                                <%= theater.state %>,
+                                                    <%= theater.country%>
+                                        </p>
+
+                                        <% }) %>
+
+                                            <!-- <p>
+                                        _id: <%= movie._id%>
+                                    </p> -->
+                                            <div class="d-flex mt-2">
+                                                <form method="post" action="/sitdata">
+                                                    <input type="hidden" name="id" value="<%= movie._id%>" />
+                                                    <button type="submit" class="btn btn-primary">Book now</button>
+                                                </form>
+                                                <button class="ms-3 btn btn-secondary">see more</button>
+                                            </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <% }); %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("Footer/footer") %>

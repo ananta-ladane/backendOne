@@ -1,0 +1,34 @@
+<%- include("Header/header") %>
+    <div class="container mt-4">
+        <h1>Edit Movie Data</h1>
+        <form class="container mt-2" action="/update/<%= data._id %>" method="POST">
+
+            <input type="hidden" name="tid" value="<%= data.tid %>" class="form-control my-2" />
+            <input type="text" placeholder="Enter image path" value="<%= data.Image %>" name="image"
+                class="form-control my-2" />
+            <input type="text" placeholder="Enter movie name" name="moviename" value="<%= data.Moviename %>"
+                class="form-control my-2" />
+            <input type="text" placeholder="Enter movie Distription" name="moviedis " value="<%= data.Discription %>"
+                class="form-control my-2" />
+            <input type="number" placeholder="Enter movie Rating" name="movierating" value="<%= data.Reting %>"
+                class="form-control my-2" />
+            <input type="text" placeholder="Enter author name" name="auther" value="<%= data.Author %>"
+                class="form-control my-2" />
+            <input type="date" placeholder="Enter movie Data" name="date" value="<%= data.Date %>"
+                class="form-control my-2" />
+            <input type="time" placeholder="Enter show time " name="time" value="<%= data.Time %>"
+                class="form-control my-2" />
+            <input type="time" placeholder="Enter show end time " name="endtime" value="<%= data.Endtime %>"
+                class="form-control my-2" />
+            <input type="number" placeholder="Enter the movie Duration" name="duration" value="<%= data.Duration %>"
+                class="form-control my-2" />
+            <input type="number" placeholder="Enter the movie price" name="price" value="<%= data.Price %>"
+                class="form-control my-2" />
+            <input type="datetime-local" placeholder="Enter show date and time" name="datetime"
+                value="<%= data.datetime %>" class="form-control my-2">
+            <input type="text" placeholder="Enter the show status" name="status" value="<%= data.status%>"
+                class="form-control my-2">
+            <button type="submit" class="btn btn-primary">Update Data</button>
+        </form>
+    </div>
+    <%- include("Footer/footer")%>

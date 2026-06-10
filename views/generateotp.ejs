@@ -1,0 +1,22 @@
+<%- include("Header/header")%>
+
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center w-100  mt-5 ">
+            <div class="w-75 w-lg-50  w-xl-50 border  border-info rounded-2 p-3">
+                <h1> login here</h1>
+                <form class="container" method="post" action="/genoptdata">
+                    <input type="text" placeholder="Enter your Firstname & Lastname" name="name"
+                        class="form-control my-2" />
+                    <input type="email" placeholder="Enter your email" name="email" class="form-control my-2" />
+                    <button class="btn btn-primary" type="submit">generate OTP</button>
+                </form>
+                <% if(message){%>
+                    <p>
+                        <%= message %>
+                    </p>
+                    <% } %>
+            </div>
+        </div>
+    </div>
+
+    <%- include("Footer/footer")%>

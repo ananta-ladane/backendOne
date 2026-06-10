@@ -1,0 +1,1234 @@
+/* -------------this is show list page css----------- */
+
+.main-sd {
+    margin: 0;
+    padding: 0;
+    background-color: #1E293B;
+}
+
+.sd-nav {
+    padding-top: 20px;
+    background-color: rgb(3, 0, 20, 0.5);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 90px;
+
+}
+
+.sd-nav p button {
+    background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-right: 3px;
+    color: white;
+    font-weight: 700;
+
+}
+
+.sd-nav p span {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: var(--hfont);
+
+}
+
+.sd-nav p span i {
+    color: rgb(255, 0, 85, 0.9);
+    font-family: var(--hfont);
+
+}
+
+.modal-dialog {
+    position: absolute;
+    z-index: 1;
+}
+
+.md {
+    position: fixed;
+    z-index: 9999;
+    top: 22px;
+    right: 5px;
+}
+
+.main-bd {
+    padding-top: 150px;
+    background-color: #1E293B;
+
+}
+
+.smn {
+    margin-left: 25%;
+}
+
+.smn input {
+    padding: 6px;
+    border-radius: 10px;
+    width: 30%;
+    display: none;
+
+}
+
+.smn button {
+    padding: 5px 8px 8px 8px;
+    border-radius: 8px;
+    display: none;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+    background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+
+}
+
+.btnl {
+    padding: 5px 10px 8px 10px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+    color: white;
+    font-size: 15px;
+    right: 0;
+
+
+}
+
+
+
+
+/* -------------- This is the movie serch page css--------------------- */
+
+.main-sm {
+    background-color: #1E293B;
+    height: 100vh;
+}
+
+.sm-body {
+    padding-top: 100px;
+}
+
+
+
+
+
+/* ----------------------This is the locatio serach page css------------------------------ */
+
+.main-lbm {
+    background-color: #1E293B;
+}
+
+.lbm-body {
+    padding-top: 150px;
+
+}
+
+
+/* ------------------------This is the tiket booking page css----------------- */
+
+
+.main-bm {
+
+    padding-bottom: 30px;
+}
+
+
+.bm-body {
+    padding-top: 120px;
+}
+
+.all {
+    margin-bottom: 25px;
+}
+
+
+/* -------------------com ticket css ------------------ */
+
+.main-cmt {
+    background-color: #1E293B;
+    height: 100vh;
+}
+
+.cmt-bd {
+    padding-top: 120px;
+
+}
+
+
+/* ------------------------tbd css ---------------------- */
+
+.main-tbd {
+    background-color: #1E293B;
+    height: 800px;
+}
+
+.tbd-bd {
+    padding-top: 120px;
+}
+
+
+/* ----------------------tikect download------ */
+
+.main-twp {
+    width: 100%;
+    height: 100vh;
+    background-color: #1E293B;
+}
+
+.dw-bd {
+    padding-top: 170px;
+}
+
+
+
+/* -------------------js-div-------------------------------- */
+
+/* .js-div{
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid black;
+} */
+
+.ticket-card {
+    width: 350px;
+    padding: 20px;
+    border: 2px dotted rgb(86, 174, 211);
+    background: #fff;
+    font-family: var(--bfont);
+    border-radius: 10px;
+}
+
+@media (min-width:576px) {
+    /* -------------this is show list page css----------- */
+
+    .main-sd {
+        margin: 0;
+        padding: 0;
+        background-color: #1E293B;
+    }
+
+    .sd-nav {
+        padding-top: 20px;
+        background-color: rgb(3, 0, 20, 0.5);
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        height: 90px;
+
+    }
+
+    .sd-nav p button {
+        background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 5px 10px;
+        margin-right: 3px;
+        color: white;
+        font-weight: 700;
+
+    }
+
+    .sd-nav p span {
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: var(--hfont);
+
+    }
+
+    .sd-nav p span i {
+        color: rgb(255, 0, 85, 0.9);
+        font-family: var(--hfont);
+
+    }
+
+    .modal-dialog {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .md {
+        position: fixed;
+        z-index: 9999;
+        top: 22px;
+        right: 25px;
+    }
+
+    .main-bd {
+        padding-top: 150px;
+        background-color: #1E293B;
+
+    }
+
+    .smn {
+        margin-left: 5%;
+        display: flex;
+        margin-top: -15px;
+
+    }
+
+    .smn input {
+        padding: 5px;
+        border-radius: 10px;
+        width: 50%;
+        display: flex;
+    }
+
+    .smn button {
+        padding: 5px 8px 8px 8px;
+        border-radius: 8px;
+        display: flex;
+        color: white;
+        text-transform: capitalize;
+        font-weight: 600;
+        background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+
+    }
+
+    .btnl {
+        padding: 5px 10px 8px 10px;
+        border-radius: 5px;
+        background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+        color: white;
+        font-size: 15px;
+        right: 0;
+
+
+    }
+
+
+
+
+    /* -------------- This is the movie serch page css--------------------- */
+
+    .main-sm {
+        background-color: #1E293B;
+        height: 100vh;
+    }
+
+    .sm-body {
+        padding-top: 100px;
+    }
+
+
+
+
+
+    /* ----------------------This is the locatio serach page css------------------------------ */
+
+    .main-lbm {
+        background-color: #1E293B;
+    }
+
+    .lbm-body {
+        padding-top: 150px;
+
+    }
+
+
+    /* ------------------------This is the tiket booking page css----------------- */
+
+
+    .main-bm {
+
+        padding-bottom: 30px;
+    }
+
+
+    .bm-body {
+        padding-top: 120px;
+    }
+
+    .all {
+        margin-bottom: 25px;
+    }
+
+
+    /* -------------------com ticket css ------------------ */
+
+    .main-cmt {
+        background-color: #1E293B;
+        height: 100vh;
+    }
+
+    .cmt-bd {
+        padding-top: 120px;
+
+    }
+
+
+    /* ------------------------tbd css ---------------------- */
+
+    .main-tbd {
+        background-color: #1E293B;
+        height: 800px;
+    }
+
+    .tbd-bd {
+        padding-top: 120px;
+    }
+
+
+    /* ----------------------tikect download------ */
+
+    .main-twp {
+        width: 100%;
+        height: 100vh;
+        background-color: #1E293B;
+    }
+
+    .dw-bd {
+        padding-top: 170px;
+    }
+
+
+
+    /* -------------------js-div-------------------------------- */
+
+    /* .js-div{
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid black;
+  } */
+
+    .ticket-card {
+        width: 350px;
+        padding: 20px;
+        border: 2px dotted rgb(86, 174, 211);
+        background: #fff;
+        font-family: var(--bfont);
+        border-radius: 10px;
+    }
+}
+
+@media (min-width:769px) {
+    /* -------------this is show list page css----------- */
+
+    .main-sd {
+        margin: 0;
+        padding: 0;
+        background-color: #1E293B;
+    }
+
+    .sd-nav {
+        padding-top: 20px;
+        background-color: rgb(3, 0, 20, 0.5);
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        height: 80px;
+
+    }
+
+    .sd-nav p {
+        font-size: 22px
+    }
+
+    .sd-nav p button {
+        background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 5px 10px;
+        margin-right: 3px;
+        color: white;
+        font-weight: 700;
+
+    }
+
+    .sd-nav p span {
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: var(--hfont);
+
+    }
+
+    .sd-nav p span i {
+        color: rgb(255, 0, 85, 0.9);
+        font-family: var(--hfont);
+
+    }
+
+    .modal-dialog {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .md {
+        position: fixed;
+        z-index: 9999;
+        top: 20px;
+        right: 35px;
+    }
+
+    .main-bd {
+        padding-top: 150px;
+        background-color: #1E293B;
+
+    }
+
+    .smn {
+        margin-left: 9%;
+    }
+
+    .smn input {
+        padding: 5px;
+        border-radius: 10px;
+        width: 60%;
+
+
+    }
+
+    .smn button {
+        padding: 5px 8px 8px 8px;
+        border-radius: 8px;
+        margin-top: 1px;
+        margin-left:5px;
+        color: white;
+        text-transform: capitalize;
+        font-weight: 600;
+        background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+
+    }
+
+    .btnl {
+        padding: 5px 15px 8px 15px;
+        border-radius: 10px;
+        background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+        color: white;
+        font-size: 18px;
+        right: 0;
+
+
+    }
+
+
+
+
+    /* -------------- This is the movie serch page css--------------------- */
+
+    .main-sm {
+        background-color: #1E293B;
+        height: 100vh;
+    }
+
+    .sm-body {
+        padding-top: 100px;
+    }
+
+
+
+
+
+    /* ----------------------This is the locatio serach page css------------------------------ */
+
+    .main-lbm {
+        background-color: #1E293B;
+    }
+
+    .lbm-body {
+        padding-top: 150px;
+
+    }
+
+
+    /* ------------------------This is the tiket booking page css----------------- */
+
+
+    .main-bm {
+
+        padding-bottom: 30px;
+    }
+
+
+    .bm-body {
+        padding-top: 120px;
+    }
+
+    .all {
+        margin-bottom: 25px;
+    }
+
+
+    /* -------------------com ticket css ------------------ */
+
+    .main-cmt {
+        background-color: #1E293B;
+        height: 100vh;
+    }
+
+    .cmt-bd {
+        padding-top: 120px;
+
+    }
+
+
+    /* ------------------------tbd css ---------------------- */
+
+    .main-tbd {
+        background-color: #1E293B;
+        height: 800px;
+    }
+
+    .tbd-bd {
+        padding-top: 120px;
+    }
+
+
+    /* ----------------------tikect download------ */
+
+    .main-twp {
+        width: 100%;
+        height: 100vh;
+        background-color: #1E293B;
+    }
+
+    .dw-bd {
+        padding-top: 170px;
+    }
+
+
+
+    /* -------------------js-div-------------------------------- */
+
+    /* .js-div{
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid black;
+  } */
+
+    .ticket-card {
+        width: 350px;
+        padding: 20px;
+        border: 2px dotted rgb(86, 174, 211);
+        background: #fff;
+        font-family: var(--bfont);
+        border-radius: 10px;
+    }
+}
+
+@media (min-width:992px) {
+    /* -------------this is show list page css----------- */
+
+    .main-sd {
+        margin: 0;
+        padding: 0;
+        background-color: #1E293B;
+    }
+
+    .sd-nav {
+        padding-top: 20px;
+        background-color: rgb(3, 0, 20, 0.5);
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        height: 80px;
+
+    }
+
+    .sd-nav p button {
+        background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 5px 10px;
+        margin-right: 3px;
+        color: white;
+        font-weight: 700;
+
+    }
+
+    .sd-nav p span {
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: var(--hfont);
+
+    }
+
+    .sd-nav p span i {
+        color: rgb(255, 0, 85, 0.9);
+        font-family: var(--hfont);
+
+    }
+
+    .modal-dialog {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .md {
+        position: fixed;
+        z-index: 9999;
+        top: 18px;
+        right: 35px;
+    }
+
+    .main-bd {
+        padding-top: 150px;
+        background-color: #1E293B;
+
+    }
+
+    .smn {
+        margin-left: 19%;
+    }
+
+    .smn input {
+        padding: 6px;
+        border-radius: 10px;
+        width: 70%;
+      
+
+    }
+
+    .smn button {
+        padding: 5px 8px 8px 8px;
+        border-radius: 8px;
+       
+        color: white;
+        text-transform: capitalize;
+        font-weight: 600;
+        background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+
+    }
+
+    .btnl {
+        padding: 8px 10px 8px 10px;
+        border-radius: 8px;
+        background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+        color: white;
+        font-size: 18px;
+        right: 0;
+
+
+    }
+
+
+
+
+    /* -------------- This is the movie serch page css--------------------- */
+
+    .main-sm {
+        background-color: #1E293B;
+        height: 100vh;
+    }
+
+    .sm-body {
+        padding-top: 100px;
+    }
+
+
+
+
+
+    /* ----------------------This is the locatio serach page css------------------------------ */
+
+    .main-lbm {
+        background-color: #1E293B;
+    }
+
+    .lbm-body {
+        padding-top: 150px;
+
+    }
+
+
+    /* ------------------------This is the tiket booking page css----------------- */
+
+
+    .main-bm {
+
+        padding-bottom: 30px;
+    }
+
+
+    .bm-body {
+        padding-top: 120px;
+    }
+
+    .all {
+        margin-bottom: 25px;
+    }
+
+
+    /* -------------------com ticket css ------------------ */
+
+    .main-cmt {
+        background-color: #1E293B;
+        height: 100vh;
+    }
+
+    .cmt-bd {
+        padding-top: 120px;
+
+    }
+
+
+    /* ------------------------tbd css ---------------------- */
+
+    .main-tbd {
+        background-color: #1E293B;
+        height: 800px;
+    }
+
+    .tbd-bd {
+        padding-top: 120px;
+    }
+
+
+    /* ----------------------tikect download------ */
+
+    .main-twp {
+        width: 100%;
+        height: 100vh;
+        background-color: #1E293B;
+    }
+
+    .dw-bd {
+        padding-top: 170px;
+    }
+
+
+
+    /* -------------------js-div-------------------------------- */
+
+    /* .js-div{
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid black;
+  } */
+
+    .ticket-card {
+        width: 350px;
+        padding: 20px;
+        border: 2px dotted rgb(86, 174, 211);
+        background: #fff;
+        font-family: var(--bfont);
+        border-radius: 10px;
+    }
+}
+
+@media (min-width:1200px) {
+    /* -------------this is show list page css----------- */
+
+    .main-sd {
+        margin: 0;
+        padding: 0;
+        background-color: #1E293B;
+    }
+
+    .sd-nav {
+        padding-top: 12px;
+        background-color: rgb(3, 0, 20, 0.5);
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        height: 80px;
+
+    }
+
+    .sd-nav p button {
+        background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 5px 10px;
+        margin-right: 3px;
+        color: white;
+        font-weight: 700;
+
+    }
+
+    .sd-nav p span {
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: var(--hfont);
+
+    }
+
+    .sd-nav p span i {
+        color: rgb(255, 0, 85, 0.9);
+        font-family: var(--hfont);
+
+    }
+
+    .modal-dialog {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .md {
+        position: fixed;
+        z-index: 9999;
+        top: 16px;
+        right: 49px;
+    }
+
+    .main-bd {
+        padding-top: 150px;
+        background-color: #1E293B;
+
+    }
+
+    /* .smn {
+        margin-left: 29%;
+    }
+
+    .smn input {
+        padding: 6px;
+        border-radius: 10px;
+        width: 30%;
+      
+
+    }
+
+    .smn button {
+        padding: 5px 8px 8px 8px;
+        border-radius: 8px;
+       
+        color: white;
+        text-transform: capitalize;
+        font-weight: 600;
+        background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+
+    } */
+
+    .btnl {
+        padding: 10px 10px 10px 10px;
+        border-radius: 10px;
+        background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+        color: white;
+        font-size: 18px;
+        right: 0;
+
+
+    }
+
+
+
+
+    /* -------------- This is the movie serch page css--------------------- */
+
+    .main-sm {
+        background-color: #1E293B;
+        height: 100vh;
+    }
+
+    .sm-body {
+        padding-top: 100px;
+    }
+
+
+
+
+
+    /* ----------------------This is the locatio serach page css------------------------------ */
+
+    .main-lbm {
+        background-color: #1E293B;
+    }
+
+    .lbm-body {
+        padding-top: 150px;
+
+    }
+
+
+    /* ------------------------This is the tiket booking page css----------------- */
+
+
+    .main-bm {
+
+        padding-bottom: 30px;
+    }
+
+
+    .bm-body {
+        padding-top: 120px;
+    }
+
+    .all {
+        margin-bottom: 25px;
+    }
+
+
+    /* -------------------com ticket css ------------------ */
+
+    .main-cmt {
+        background-color: #1E293B;
+        height: 100vh;
+    }
+
+    .cmt-bd {
+        padding-top: 120px;
+
+    }
+
+
+    /* ------------------------tbd css ---------------------- */
+
+    .main-tbd {
+        background-color: #1E293B;
+        height: 800px;
+    }
+
+    .tbd-bd {
+        padding-top: 120px;
+    }
+
+
+    /* ----------------------tikect download------ */
+
+    .main-twp {
+        width: 100%;
+        height: 100vh;
+        background-color: #1E293B;
+    }
+
+    .dw-bd {
+        padding-top: 170px;
+    }
+
+
+
+    /* -------------------js-div-------------------------------- */
+
+    /* .js-div{
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid black;
+  } */
+
+    .ticket-card {
+        width: 350px;
+        padding: 20px;
+        border: 2px dotted rgb(86, 174, 211);
+        background: #fff;
+        font-family: var(--bfont);
+        border-radius: 10px;
+    }
+}
+
+@media (min-width:1400px) {
+    /* -------------this is show list page css----------- */
+
+    .main-sd {
+        margin: 0;
+        padding: 0;
+        background-color: #1E293B;
+    }
+
+    .sd-nav {
+        padding-top: 20px;
+        background-color: rgb(3, 0, 20, 0.5);
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        height: 90px;
+
+    }
+
+    .sd-nav p button {
+        background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 5px 10px;
+        margin-right: 3px;
+        color: white;
+        font-weight: 700;
+
+    }
+
+    .sd-nav p span {
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: var(--hfont);
+
+    }
+
+    .sd-nav p span i {
+        color: rgb(255, 0, 85, 0.9);
+        font-family: var(--hfont);
+
+    }
+
+    .modal-dialog {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .md {
+        position: fixed;
+        z-index: 9999;
+        top: 22px;
+        right: 61px;
+    }
+
+    .main-bd {
+        padding-top: 150px;
+        background-color: #1E293B;
+
+    }
+
+    .smn {
+        margin-left: 25%;
+    }
+
+    .smn input {
+        padding: 6px;
+        border-radius: 10px;
+        width: 70%;
+      
+
+    }
+
+    .smn button {
+        padding: 5px 8px 8px 8px;
+        border-radius: 8px;
+       
+        color: white;
+        text-transform: capitalize;
+        font-weight: 600;
+        background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+
+    }
+
+    .btnl {
+        padding: 10px 10px 10px 10px;
+        border-radius: 10px;
+        background: linear-gradient(to bottom left, #dd1a1a, #8021d9);
+        color: white;
+        font-size: 18px;
+        right: 0;
+
+
+    }
+
+
+
+
+    /* -------------- This is the movie serch page css--------------------- */
+
+    .main-sm {
+        background-color: #1E293B;
+        height: 100vh;
+    }
+
+    .sm-body {
+        padding-top: 100px;
+    }
+
+
+
+
+
+    /* ----------------------This is the locatio serach page css------------------------------ */
+
+    .main-lbm {
+        background-color: #1E293B;
+    }
+
+    .lbm-body {
+        padding-top: 150px;
+
+    }
+
+
+    /* ------------------------This is the tiket booking page css----------------- */
+
+
+    .main-bm {
+
+        padding-bottom: 30px;
+    }
+
+
+    .bm-body {
+        padding-top: 120px;
+    }
+
+    .all {
+        margin-bottom: 25px;
+    }
+
+
+    /* -------------------com ticket css ------------------ */
+
+    .main-cmt {
+        background-color: #1E293B;
+        height: 100vh;
+    }
+
+    .cmt-bd {
+        padding-top: 120px;
+
+    }
+
+
+    /* ------------------------tbd css ---------------------- */
+
+    .main-tbd {
+        background-color: #1E293B;
+        height: 800px;
+    }
+
+    .tbd-bd {
+        padding-top: 120px;
+    }
+
+
+    /* ----------------------tikect download------ */
+
+    .main-twp {
+        width: 100%;
+        height: 100vh;
+        background-color: #1E293B;
+    }
+
+    .dw-bd {
+        padding-top: 170px;
+    }
+
+
+
+    /* -------------------js-div-------------------------------- */
+
+    /* .js-div{
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid black;
+  } */
+
+    .ticket-card {
+        width: 350px;
+        padding: 20px;
+        border: 2px dotted rgb(86, 174, 211);
+        background: #fff;
+        font-family: var(--bfont);
+        border-radius: 10px;
+    }
+}

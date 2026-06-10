@@ -1,0 +1,159 @@
+<%- include("Header/header")%>
+    <header class="hea">
+        <nav class="main-nav">
+            <div class="container">
+                <div class="d-flex  justify-content-between">
+                    <div class="d-md-flex di1-nav">
+                        <p><button><i class="bi bi-film"></i></button><span>MyBookShow</span></p>
+                        <ul class="d-none d-md-flex">
+                            <li><a href="#">Movies</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Theaters</a></li>
+                            <li><a href="#">Offers</a></li>
+
+                        </ul>
+                    </div>
+
+
+                    <input type="text" placeholder="Search for Movies..." class="d-none d-xl-flex sem">
+                    <div class="di2-nav">
+                        <button class="btn1" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Login</button>
+                        <ul class="dropdown-menu dm">
+                            <li><a class="dropdown-item" href="/showloginform">User Login </a></li>
+                            <li><a class="dropdown-item" href="/theaterlogin">Theater Login</a></li>
+                        </ul>
+                        <button class="btn2" ype="button" data-bs-toggle="dropdown" aria-expanded="false">Sign
+                            up</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/showform">User SignUp </a></li>
+                            <li><a class="dropdown-item" href="/theatersignup">Theater SignUp</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <section class="hero">
+
+            <div class="container">
+
+                <div class="di1-hero">
+                    <div class="d-flex tre">
+                        <p>TRENDUNG NOW</p>
+                        <span class="gold"><i class="bi bi-star-fill"></i> 8.9/10</span>
+                    </div>
+                    <h1>Dune: Part Two <span>The Epic Saga.</span></h1>
+                    <p class="fol">Follow the mythic journey of Paul Atreides as he unites with Chani and the Fremen
+                        while on a path
+                        of
+                        revenge against the conspirators who destroyed his family.</p>
+                    <div class="di2-hero">
+                        <button class="btn3"><a href="/showloginform"><i class="bi bi-ticket-perforated"></i> Sign In to
+                                Book
+                                Tickets</a></button>
+                        <button class="btn4" onclick="sendAlert()"><i class="bi bi-play-circle"></i> Watch
+                            Trailer</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </header>
+    <section id="sect1">
+        <div class="container">
+            <div class="di1-sect1 ">
+                <h2>Trending Movies</h2>
+                <p>Explore the most popular hits around you</p>
+                <div class="sub1-sect1 d-md-flex flex-md-wrap justify-content-xxl-evenly">
+                    <figure class="fig1">
+                        <img>
+                        <figcaption>
+                            <p class="sci">sci-fi-Action</p>
+                            <h3>the dark knight</h3>
+                            <p class="Ex">Experience the legend on IMAX</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="fig2">
+                        <img>
+                        <figcaption>
+                            <p class="sci">sci-fi-Action</p>
+                            <h3>the dark knight</h3>
+                            <p class="Ex">Experience the legend on IMAX</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="fig3">
+                        <img>
+                        <figcaption>
+                            <p class="sci">sci-fi-Action</p>
+                            <h3>the dark knight</h3>
+                            <p class="Ex">Experience the legend on IMAX</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="fig4">
+                        <img>
+                        <figcaption>
+                            <p class="sci">sci-fi-Action</p>
+                            <h3>the dark knight</h3>
+                            <p class="Ex">Experience the legend on IMAX</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="di2-sect1">
+                <h1>Join the Inner Circle</h1>
+                <p>Unlock exclusive pre-screenings, weekly discounts, and the best seats in the house before any one
+                    else</p>
+                <button class="btn5">Get Started for Free <i class="bi bi-stars"></i></button>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="main-foo">
+            <div class="d-md-flex flex-md-wrap">
+                <div class="sub1-foo">
+                    <h4><i class="bi bi-film"></i> MyBookShow</h4>
+                    <p>Your ultimate destination for movie magic. Book tickets, and experience cinema like never before.
+                    </p>
+                </div>
+                <div class="sub2-foo">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="sub3-foo">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">List Theatre</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="sub4-foo">
+                    <h4>Connect</h4>
+                    <div class="d-flex">
+                        <p><i class="bi bi-instagram"></i></p>
+                        <p><i class="bi bi-twitter"></i></p>
+                        <p><i class="bi bi-facebook"></i></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="main2-foo">
+            <p class="res"><i class="bi bi-c-circle"></i> 2026 MyBookShow All Rights Reservrd.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- <a class="me-2" href="/otpsignpage"> user signup with OTP</a> -->
+
+
+    <%- include("Footer/footer")%>
