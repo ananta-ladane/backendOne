@@ -75,6 +75,61 @@ exports.theaterdata = (req, res) => {
     })
 }
 
+exports.showpaasdata = (req, res) => {
+    res.render("theaterpass")
+}
+
+
+exports.findpassdata = (req, res) => {
+
+    let name = req.body.tname;
+    let email = req.body.email;
+
+    console.log(name);
+    console.log(email)
+
+    let theater = new Theater();
+
+    let data = theater.findpdata(name, email);
+
+    data.then((success) => {
+        console.log(success)
+        console.log("this is finddata and go updataoage")
+        if (success) {
+            res.render("theaterpasschang", { data: success });
+        }
+    }).catch((error) => {
+        console.log()
+    })
+
+}
+
+
+exports.updatepass = (req, res) => {
+    let id = req.params.id;
+    let pass = req.body.pass;
+
+    let theater = new Theater();
+
+    bcrypt.hash(pass, 10).then((success) => {
+        let theater = new Theater();
+
+        let data = theater.upass(id, success);
+
+        data.then((success) => {
+            console.log(success)
+
+            if (success) {
+                res.redirect("/theaterlogin")
+            }
+        }).catch((error) => {
+            console.log(error)
+        });
+
+    }).catch((error) => {
+        console.log(error)
+    })
+}
 
 exports.findtheaterdata = (req, res) => {
 

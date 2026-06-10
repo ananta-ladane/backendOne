@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { showsignuoform, getsignupdata, logindata, loginform, homepage, theaterpage, passshpowform, passdata, upassform, upassdata, logout } = require("../controllers/singupoprationes");
 const { showmoveform, moviedata, showmoviedata, finddata, updataMovie, allmoviedata, removie, sdata, sitdata } = require("../controllers/movieoprationes");
-const { signupdatatheaterdata, signupformtheater, theaterdata, theaterlogin, findtheaterdata, theatereditdata, updatetheaterdata, floaction, theaterlogout } = require("../controllers/theateropration");
+const { signupdatatheaterdata, signupformtheater, theaterdata, theaterlogin, findtheaterdata, theatereditdata, updatetheaterdata, floaction, theaterlogout,  showpaasdata, findpaasdata, updatepass, findpassdata } = require("../controllers/theateropration");
 const { showotpsignup, getoptuserdata, otplogin, genotp } = require("../controllers/otpsingupoperations");
 const { showfileform, getfiledata } = require("../controllers/fileoperations");
 const { isdata, fsdata, paynow, ftdata } = require("../controllers/seatbookopeations");
@@ -91,6 +91,11 @@ router.post("/locationdata", floaction)
 router.post("/updatetheaterdata/:id", updatetheaterdata);
 router.get("/theateredit/:id", theatereditdata);
 router.get("/theaterdetail/:Tid", findtheaterdata);
+
+router.post("/changepadd/:id", updatepass);
+router.post("/getpassdata", findpassdata);
+router.get("/theaterpass", showpaasdata);
+
 router.post("/theaterlogindata", theaterdata);
 router.get("/theaterlogin", theaterlogin);
 

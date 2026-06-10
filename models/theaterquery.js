@@ -67,6 +67,39 @@ class Theaters {
         return data;
     }
 
+    findpdata(name, email) {
+
+        let db = getdb();
+
+        let data = db.collection("theaterdata").findOne({ theatername: name, email: email }).then((success) => {
+            console.log(success)
+            return success
+        }).catch((error) => {
+            console.log(error)
+            return error
+        })
+
+        return data;
+
+    }
+
+    upass(id, pass) {
+
+        let db = getdb();
+
+        let tid = new ObjectId(id)
+
+        let data = db.collection("theaterdata").updateOne({ _id: tid }, { $set: { password: pass } }).then((success) => {
+            console.log(success)
+            return success
+        }).catch((error) => {
+            console.log(error)
+            return error
+        })
+
+        return data;
+    }
+
     edata(id) {
         let db = getdb();
 

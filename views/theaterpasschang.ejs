@@ -1,0 +1,22 @@
+<%- include("Header/header")%>
+
+    <div class="us-div">
+        <div class="conatiner mt-2">
+            <div class="us-sub">
+
+                <div class="us-sub1">
+
+                    <form method="post" action="/changepadd/<%= data._id %>">
+                        <input type="text" placeholder="Enter theather  name" name="name" value="<%= data.theatername%>"
+                            disabled class="form-control my-2" />
+                        <input type="email" placeholder="Enter theather email" name="email" value="<%= data.email%>"
+                            disabled class="form-control my-2" />
+                        <input type="password" placeholder="Enter new password" name="pass" class="form-control my-2" />
+                        <button type="submit" class="btn btn-warning">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("Footer/footer")%>
