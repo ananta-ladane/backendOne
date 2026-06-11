@@ -117,11 +117,11 @@ const addData = (btnn) => {
             console.log(cdt)
 
             if (cdt < datetime) {
-                axios.post("http://localhost:3000/moviebookingdetails", { mname: mname, mid: mid, tid: tid, seats: seats, time: time, today: today, fdate: fdate, mdate: mdate, endtime: endtime, duration: duration, tname: tname, location: location, totalprice: totalprice, datetime: datetime, useremail: uemail }).then((success) => {
+                axios.post("https://backendone-8rim.onrender.com/moviebookingdetails", { mname: mname, mid: mid, tid: tid, seats: seats, time: time, today: today, fdate: fdate, mdate: mdate, endtime: endtime, duration: duration, tname: tname, location: location, totalprice: totalprice, datetime: datetime, useremail: uemail }).then((success) => {
                     console.log(success);
                     let id = success.data;
                     console.log(id)
-                    window.location.href = `http://localhost:3000/showseatbookdata/?id=${id}`;
+                    window.location.href = `https://backendone-8rim.onrender.com/showseatbookdata/?id=${id}`;
                     // console.log("Hello")
                 }).catch((error) => {
                     console.log(error);
