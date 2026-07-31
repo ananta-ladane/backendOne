@@ -144,6 +144,9 @@ exports.passdata = (req, res) => {
 
     data.then((success) => {
         console.log(success);
+
+        const uname = success.username;
+        const uemail = success.email;
         if (success) {
             // const transporter = nodemailer.createTransport({
             //     host: "smtp.gmail.com",
