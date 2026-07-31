@@ -105,14 +105,15 @@ exports.logindata = (req, res) => {
 
                 req.session.uid = uid;
 
-                req.session.sava((err) => {
+                // req.session.save((err) => {
 
-                    if (err) {
-                        console.log("filed to sava session id")
-                    } else {
-                        console.log("session id sava successfully")
-                    }
-                })
+                //     if (err) {
+                //         console.log("filed to sava session id")
+                //     } else {
+                //         console.log("session id sava successfully")
+                //     }
+                // })
+                
                 console.log("this is the user session id: " + req.session.uid)
                 res.render("dashboard", { uid: req.session.uid });
 
