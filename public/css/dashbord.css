@@ -491,6 +491,7 @@
 
 .di2-di3 {
     width: 100%;
+    z-index: 0;
 }
 
 .item1 {
@@ -773,7 +774,7 @@
     font-family: var(--bfont);
 }
 
-.di1-di5 p a{
+.di1-di5 p a {
     color: white;
     text-decoration: none;
 }
@@ -781,7 +782,7 @@
 .sub1-di5 {
     width: 90%;
     height: 370px;
-   box-shadow: 0 0 4px white;
+    box-shadow: 0 0 4px white;
     margin: 20px auto;
     padding: 10px;
     border-radius: 10px;
@@ -861,7 +862,7 @@
 .sub2-di5 {
     width: 90%;
     height: 400px;
-   box-shadow: 0 0 3px white;
+    box-shadow: 0 0 3px white;
     margin: 20px auto;
     padding: 10px;
     border-radius: 10px;
@@ -1049,8 +1050,8 @@
     padding-top: 25px;
     color: rgb(138, 140, 144);
     font-family: var(--bfont);
-    margin-top:30px;
-  
+    margin-top: 30px;
+
 }
 
 
@@ -1512,8 +1513,8 @@
         height: 510px;
     }
 
-    .di2-dfoo{
-        padding-top:20px
+    .di2-dfoo {
+        padding-top: 20px
     }
 
 }
@@ -1714,8 +1715,8 @@
         width: 40%;
     }
 
-    .di2-dfoo{
-        padding-top:35px
+    .di2-dfoo {
+        padding-top: 35px
     }
 
 
