@@ -108,7 +108,7 @@ exports.logindata = (req, res) => {
                 req.session.sava((err) => {
 
                     if (err) {
-                        console.log("filed to dava session id")
+                        console.log("filed to sava session id")
                     } else {
                         console.log("session id sava successfully")
                     }
