@@ -39,23 +39,23 @@ exports.getsignupdata = (req, res) => {
 
                     console.log("Email send successfully")
 
-                    // const transporter = nodemailer.createTransport({
-                    //     host: "smtp.gmail.com",
-                    //     port: 587,
-                    //     secure: false, // use STARTTLS (upgrade connection to TLS after connecting)
-                    //     auth: {
-                    //         user: "anantaladane42@gmail.com",
-                    //         pass: "eqdtqilqfptrmcon",
-                    //     },
-                    // });
+                    const transporter = nodemailer.createTransport({
+                        host: "smtp.gmail.com",
+                        port: 587,
+                        secure: false, // use STARTTLS (upgrade connection to TLS after connecting)
+                        auth: {
+                            user: "anantaladane42@gmail.com",
+                            pass: "eqdtqilqfptrmcon",
+                        },
+                    });
 
-                    // transporter.sendMail({
-                    //     from: '"developer" <anantaladane@gmail.com>', // sender address
-                    //     to: email, // list of recipients
-                    //     subject: "Welcome to MyBookShow", // subject line
-                    //     text: "", // plain text body
-                    //     html: "<h1>Welcome to MyBookShow<h1><p>thanks for signup</p>", // HTML body
-                    // });
+                    transporter.sendMail({
+                        from: '"developer" <anantaladane@gmail.com>', // sender address
+                        to: email, // list of recipients
+                        subject: "Welcome to MyBookShow", // subject line
+                        text: "", // plain text body
+                        html: "<h1>Welcome to MyBookShow<h1><p>thanks for signup</p>", // HTML body
+                    });
 
                     res.render("login", { message: "" });
 
