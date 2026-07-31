@@ -491,7 +491,7 @@
 
 .di2-di3 {
     width: 100%;
-    z-index: -1;
+
 }
 
 .item1 {
@@ -512,6 +512,8 @@
     align-items: start;
     padding-left: 20px;
     padding-bottom: 10px;
+    z-index: 0;
+
 }
 
 .item1 p {
@@ -545,6 +547,7 @@
     align-items: start;
     padding-left: 20px;
     padding-bottom: 10px;
+    z-index: 0;
 }
 
 .item2 p {
@@ -579,6 +582,7 @@
     align-items: start;
     padding-left: 20px;
     padding-bottom: 10px;
+    z-index: 0;
 }
 
 .item3 p {
