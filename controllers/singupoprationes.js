@@ -1,6 +1,6 @@
 const SignupModel = require("../models/sinupquery");
 const bcrypt = require("bcrypt");
-const nodemailer = require("nodemailer");
+// const nodemailer = require("nodemailer");
 
 
 
@@ -39,23 +39,23 @@ exports.getsignupdata = (req, res) => {
 
                     console.log("Email send successfully")
 
-                    const transporter = nodemailer.createTransport({
-                        host: "smtp.gmail.com",
-                        port: 587,
-                        secure: false, // use STARTTLS (upgrade connection to TLS after connecting)
-                        auth: {
-                            user: "anantaladane42@gmail.com",
-                            pass: "eqdtqilqfptrmcon",
-                        },
-                    });
+                    // const transporter = nodemailer.createTransport({
+                    //     host: "smtp.gmail.com",
+                    //     port: 587,
+                    //     secure: false, // use STARTTLS (upgrade connection to TLS after connecting)
+                    //     auth: {
+                    //         user: "anantaladane42@gmail.com",
+                    //         pass: "eqdtqilqfptrmcon",
+                    //     },
+                    // });
 
-                    transporter.sendMail({
-                        from: '"developer" <anantaladane@gmail.com>', // sender address
-                        to: email, // list of recipients
-                        subject: "Welcome to MyBookShow", // subject line
-                        text: "", // plain text body
-                        html: "<h1>Welcome to MyBookShow<h1><p>thanks for signup</p>", // HTML body
-                    });
+                    // transporter.sendMail({
+                    //     from: '"developer" <anantaladane@gmail.com>', // sender address
+                    //     to: email, // list of recipients
+                    //     subject: "Welcome to MyBookShow", // subject line
+                    //     text: "", // plain text body
+                    //     html: "<h1>Welcome to MyBookShow<h1><p>thanks for signup</p>", // HTML body
+                    // });
 
                     res.render("login", { message: "" });
 
@@ -145,23 +145,23 @@ exports.passdata = (req, res) => {
     data.then((success) => {
         console.log(success);
         if (success) {
-            const transporter = nodemailer.createTransport({
-                host: "smtp.gmail.com",
-                port: 587,
-                secure: false, // use STARTTLS (upgrade connection to TLS after connecting)
-                auth: {
-                    user: "anantaladane42@gmail.com",
-                    pass: "eqdtqilqfptrmcon",
-                },
-            });
+            // const transporter = nodemailer.createTransport({
+            //     host: "smtp.gmail.com",
+            //     port: 587,
+            //     secure: false, // use STARTTLS (upgrade connection to TLS after connecting)
+            //     auth: {
+            //         user: "anantaladane42@gmail.com",
+            //         pass: "eqdtqilqfptrmcon",
+            //     },
+            // });
 
-            transporter.sendMail({
-                from: '"developer" <anantaladane@gmail.com>', // sender address
-                to: email, // list of recipients
-                subject: "Welcome to MyBookShow", // subject line
-                text: "", // plain text body
-                html: `<h1>Welcome to MyBookShow<h1> <p>Change your password <a href='https://backendone-8rim.onrender.com/changepassshowform'> ckick here</a></p> <h5>Thank you,</h5> <p>Best Regards, </p><p>Ananta Ladane</p>`, // HTML body
-            });
+            // transporter.sendMail({
+            //     from: '"developer" <anantaladane@gmail.com>', // sender address
+            //     to: email, // list of recipients
+            //     subject: "Welcome to MyBookShow", // subject line
+            //     text: "", // plain text body
+            //     html: `<h1>Welcome to MyBookShow<h1> <p>Change your password <a href='https://backendone-8rim.onrender.com/changepassshowform'> ckick here</a></p> <h5>Thank you,</h5> <p>Best Regards, </p><p>Ananta Ladane</p>`, // HTML body
+            // });
             console.log("link send on email")
             res.redirect("/changepassshowform")
         } else {
