@@ -1,6 +1,6 @@
 const SignupModel = require("../models/sinupquery");
 const bcrypt = require("bcrypt");
-// const nodemailer = require("nodemailer");
+const nodemailer = require("nodemailer");
 
 
 
