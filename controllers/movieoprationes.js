@@ -123,7 +123,7 @@ exports.updataMovie = (req, res) => {
     let data = {
 
         Image: req.body.image,
-        Name: req.body.moviename,
+        Moviename: req.body.moviename,
         Discription: req.body.moviedis,
         Reting: req.body.movierating,
         Author: req.body.auther,

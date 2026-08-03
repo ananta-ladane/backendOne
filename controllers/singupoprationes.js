@@ -4,7 +4,6 @@ const bcrypt = require("bcrypt");
 
 
 
-
 exports.homepage = (req, res) => {
     res.render("homepage");
 }

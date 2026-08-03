@@ -85,6 +85,7 @@ router.get("/finddata/:id", finddata);
 router.post("/remove/:id", removie);
 router.get("/showmovies/:Tid", showmoviedata);
 router.post("/getmoviedata", moviedata);
+
 // router.get("/showmovieform", showmoveform);
 
 router.post("/locationdata", floaction)
