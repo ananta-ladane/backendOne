@@ -19,104 +19,108 @@
         </nav>
 
 
-        <% if(bookseat.length < 1 || ct > mdatetime) { %>
-            <div class="bm-body">
-                <div class="container">
-                    <h1 class="all">All seats are open for booking you can choose any of them</h1>
-                    <% mdata.map((data)=> { %>
-                        <div class=" col-md-12 mb-3   ">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p> <img class="w-100" src="<%= data.Image %>"></p>
-                                    <h4 class="card-text">
-                                        movie name : <span id="mname">
-                                            <%= data.Moviename %>
-                                        </span>
-                                    </h4>
-                                    <p class="card-text">
-                                        <%= data.Discription %>
-                                            <%= data.tid %>
-                                                <%= data._id %>
+        <% if(ct < mdatetime) {%>
 
-                                    </p>
-                                    <p class="card-text">Rating: <%= data.Reting %>
-                                    </p>
-                                    <p class="card-text">Price: <%= data.Price %>
-                                    </p>
-                                    <p class="card-text">Date:<span id="mdate">
-                                            <%= data.Date %>
-                                        </span>
-                                    </p>
-                                    <p class="card-text">Time: <span id="mtime">
-                                            <%= data.Time %>
-                                        </span>
-                                    </p>
-                                    <p class="card-text">Endtime: <span id="endtime">
-                                            <%= data.Endtime %>
-                                        </span>
-                                    </p>
-                                    <p class="card-text">Duration: <span id="mduration">
-                                            <%= data.Duration %>
-                                        </span>
-                                    </p>
-                                    <p class="card-text">Show date & time: <spna id="datetime">
-                                            <%=data.datetime%>
-                                        </spna>
-                                    </p>
-                                    <p>Price: <span id="mprice">
-                                            <%= data.Price %>
-                                        </span></p>
-                                    <p class="card-text">
-                                        <% data.theaterdata.map((tdata)=>{ %>
-                                            <strong>Theater name: <spna id="tname">
-                                                    <%= tdata.theatername %>
-                                                </spna></strong>
-                                            <p>
-                                                <spna id="location">
-                                                    <%= tdata.city %>,
-                                                        <%= tdata.state %>,
-                                                            <%= tdata.country %></span>
-                                            </p>
-                                            <p> seats:<% for(let i=1; i <=Number(tdata.seats); i++) { %>
-                                                    <button class="btn btn-secodary border border-black m-1"
-                                                        onclick="changeColor(this)">
-                                                        <%= i %>
-                                                    </button>
-                                                    <% } %>
-                                            </p>
+            <% if(bookseat.length < 1 ) { %>
+                <div class="bm-body">
+                    <div class="container">
+                        <h1 class="all">All seats are open for booking you can choose any of them</h1>
+                        <% mdata.map((data)=> { %>
+                            <div class=" col-md-12 mb-3 ">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p> <img class="w-100" src="<%= data.Image %>"></p>
+                                        <h4 class="card-text">
+                                            movie name : <span id="mname">
+                                                <%= data.Moviename %>
+                                            </span>
+                                        </h4>
+                                        <p class="card-text">
+                                            <%= data.Discription %>
+                                                <%= data.tid %>
+                                                    <%= data._id %>
 
-                                            <% })%>
-                                                <input type="date" id="fdate" class="form-control w-25" />
-                                                <input type="email" id="email" placeholder="Enter the your Email"
-                                                    class="form-control w-25" />
-                                                <p class="mt-2"><button class="btn btn-primary" onclick="addData(this)"
-                                                        data-app-tid="<%= data.tid %>"
-                                                        data-app-mid="<%= data._id %>">save
-                                                        seat
-                                                    </button>
-                                                    <!-- <button class="btn border p-2 border-dark"><a href="/showseatbookdata">Next <i
+                                        </p>
+                                        <p class="card-text">Rating: <%= data.Reting %>
+                                        </p>
+                                        <p class="card-text">Price: <%= data.Price %>
+                                        </p>
+                                        <p class="card-text">Date:<span id="mdate">
+                                                <%= data.Date %>
+                                            </span>
+                                        </p>
+                                        <p class="card-text">Time: <span id="mtime">
+                                                <%= data.Time %>
+                                            </span>
+                                        </p>
+                                        <p class="card-text">Endtime: <span id="endtime">
+                                                <%= data.Endtime %>
+                                            </span>
+                                        </p>
+                                        <p class="card-text">Duration: <span id="mduration">
+                                                <%= data.Duration %>
+                                            </span>
+                                        </p>
+                                        <p class="card-text">Show date & time: <spna id="datetime">
+                                                <%=data.datetime%>
+                                            </spna>
+                                        </p>
+                                        <p>Price: <span id="mprice">
+                                                <%= data.Price %>
+                                            </span></p>
+                                        <p class="card-text">
+                                            <% data.theaterdata.map((tdata)=>{ %>
+                                                <strong>Theater name: <spna id="tname">
+                                                        <%= tdata.theatername %>
+                                                    </spna></strong>
+                                                <p>
+                                                    <spna id="location">
+                                                        <%= tdata.city %>,
+                                                            <%= tdata.state %>,
+                                                                <%= tdata.country %></span>
+                                                </p>
+                                                <p> seats:<% for(let i=1; i <=Number(tdata.seats); i++) { %>
+                                                        <button class="btn btn-secodary border border-black m-1"
+                                                            onclick="changeColor(this)">
+                                                            <%= i %>
+                                                        </button>
+                                                        <% } %>
+                                                </p>
+
+                                                <% })%>
+                                                    <input type="date" id="fdate" class="form-control w-25" />
+                                                    <input type="email" id="email" placeholder="Enter the your Email"
+                                                        class="form-control w-25" />
+                                                    <p class="mt-2"><button class="btn btn-primary"
+                                                            onclick="addData(this)" data-app-tid="<%= data.tid %>"
+                                                            data-app-mid="<%= data._id %>">save
+                                                            seat
+                                                        </button>
+                                                        <!-- <button class="btn border p-2 border-dark"><a href="/showseatbookdata">Next <i
                                                 class="bi bi-arrow-right"></i></a></button> -->
-                                                </p>
+                                                    </p>
 
-                                                <p>tid:<%= data.tid%>
-                                                </p>
-                                                <p>mid:<%= data._id%>
-                                                </p>
+                                                    <p>tid:<%= data.tid%>
+                                                    </p>
+                                                    <p>mid:<%= data._id%>
+                                                    </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <% })%>
 
+
+                            <% })%>
+
+                    </div>
                 </div>
-            </div>
 
 
-            <%} else {%>
-                <div class="bm-body">
-                    <div class="container mt-5">
-                        <h1 class="all">You can only book the available seats</h1>
+                <%}else{%>
+                    <div class="bm-body">
+                        <div class="container mt-5">
+                            <h1 class="all">You can only book the available seats</h1>
 
-                        <!-- <%=bookseat%> -->
+                            <!-- <%=bookseat%> -->
                             <% mdata.map((data)=> { %>
                                 <div class=" col-md-12 mb-3   ">
                                     <div class="card">
@@ -210,9 +214,14 @@
                                 </div>
                                 <% })%>
 
+                        </div>
                     </div>
-                </div>
-                <%}%>
+                    <%}%>
+                        <%} else{%>
+
+                            <h1 class="somonoa">Sorry, ticket booking for this show is no longer available.</h1>
+
+                            <% } %>
     </div>
     </div>
     <%- include("Footer/footer") %>

@@ -184,6 +184,7 @@ exports.sitdata = (req, res) => {
         console.log("this is the find movie data")
         let mid = success[0]._id;
         console.log(mid)
+        let mdatetime = success[0].datetime;
         let bookedData = mdata.bsdata(mid);
         bookedData.then((seat) => {
             // console.log(seats.seats);
@@ -194,7 +195,7 @@ exports.sitdata = (req, res) => {
             });
             console.log(data);
             console.log("this is the booked seats data");
-            let mdatetime = seat[0]?.tmdatetime || "";
+            // let mdatetime = seat[0]?.tmdatetime || "";
 
             // console.log("mdatetime:" + mdatetime);
 

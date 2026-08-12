@@ -144,6 +144,11 @@
     margin-bottom: 25px;
 }
 
+.somonoa {
+    text-align: center;
+    margin-top: 150px;
+}
+
 
 /* -------------------com ticket css ------------------ */
 
@@ -350,6 +355,13 @@
         margin-bottom: 25px;
     }
 
+    .somonoa {
+        text-align: center;
+
+        width: 80%;
+        margin: 150px auto;
+    }
+
 
     /* -------------------com ticket css ------------------ */
 
@@ -494,7 +506,7 @@
         padding: 5px 8px 8px 8px;
         border-radius: 8px;
         margin-top: 1px;
-        margin-left:5px;
+        margin-left: 5px;
         color: white;
         text-transform: capitalize;
         font-weight: 600;
@@ -558,6 +570,14 @@
 
     .all {
         margin-bottom: 25px;
+    }
+
+
+    .somonoa {
+        text-align: center;
+
+        width: 60%;
+        margin: 150px auto;
     }
 
 
@@ -692,14 +712,14 @@
         padding: 6px;
         border-radius: 10px;
         width: 70%;
-      
+
 
     }
 
     .smn button {
         padding: 5px 8px 8px 8px;
         border-radius: 8px;
-       
+
         color: white;
         text-transform: capitalize;
         font-weight: 600;
@@ -763,6 +783,14 @@
 
     .all {
         margin-bottom: 25px;
+    }
+
+
+    .somonoa {
+        text-align: center;
+
+        width: 60%;
+        margin: 150px auto;
     }
 
 
@@ -971,6 +999,14 @@
     }
 
 
+    .somonoa {
+        text-align: center;
+
+        width: 60%;
+        margin: 150px auto;
+    }
+
+
     /* -------------------com ticket css ------------------ */
 
     .main-cmt {
@@ -1102,14 +1138,14 @@
         padding: 6px;
         border-radius: 10px;
         width: 70%;
-      
+
 
     }
 
     .smn button {
         padding: 5px 8px 8px 8px;
         border-radius: 8px;
-       
+
         color: white;
         text-transform: capitalize;
         font-weight: 600;
@@ -1175,6 +1211,12 @@
         margin-bottom: 25px;
     }
 
+
+    .somonoa {
+        text-align: center;
+        width: 60%;
+        margin: 150px auto;
+    }
 
     /* -------------------com ticket css ------------------ */
 
